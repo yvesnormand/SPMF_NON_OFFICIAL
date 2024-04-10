@@ -1,0 +1,9 @@
+#see https://dev.to/cicirello/how-to-configure-jitpack-for-recent-jdk-versions-4pek
+#for explanations.
+jdk:
+  - openjdk21
+before_install:
+  - sdk install java 21.0.2-tem
+  - sdk use java 21.0.2-tem
+  - sdk install maven #update maven
+  - mvn -v #log maven version when building it
